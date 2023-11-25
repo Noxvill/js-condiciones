@@ -57,7 +57,7 @@ function validenumero(evt){
         
       return true;
     } else{ 
-        window.alert("Solo está permitido utilizar números")
+        window.alert("Solo está permitido ingresar números")
       return false;
     }
  }
