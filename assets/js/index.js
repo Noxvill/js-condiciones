@@ -44,6 +44,24 @@ function limpiarcampos(){
         element.innerHTML = '';
 }
 
+// Función para permitir que el usuario ingrese solo números en la caja de texto
+
+function validenumero(evt){
+   
+    var code = (evt.which) ? evt.which : evt.keyCode;
+			
+    if(code==8) {
+        
+      return true;
+    } else if(code>=48 && code<=57) { 
+        
+      return true;
+    } else{ 
+        window.alert("Solo está permitido utilizar números")
+      return false;
+    }
+ }
+
 // Validando la password
 
 

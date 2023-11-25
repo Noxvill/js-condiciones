@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Age Validation</title>
+        <script type="text/javascript">
+		function valideKey(evt){
+			
+			// code is the decimal ASCII representation of the pressed key.
+			var code = (evt.which) ? evt.which : evt.keyCode;
+			
+			if(code==8) { // backspace.
+			  return true;
+			} else if(code>=48 && code<=57) { // is a number.
+			  return true;
+			} else{ // other keys.
+			  return false;
+			}
+		}
+		</script>
+    </head>
+
+    <body>
+        <form action="" method="post">
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" onkeypress="return valideKey(event);" />
+            <input type="submit" value="Save" />
+        </form>
+    </body>
+</html> 
